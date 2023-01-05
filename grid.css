@@ -1,0 +1,127 @@
+body{
+    background-color: blue
+}
+#img1{
+    display:inline-block;
+    position:absolute;
+    z-index: -1;
+    width:50%;
+    height:20%;
+}
+h2{
+    
+    position:relative;
+   z-index: 1;
+    color: rgb(154, 154, 38);
+    font-size:50px;
+      background-color: rgba(0, 0, 0, 0.603);
+    display: inline;
+    margin-left: 40%;
+        
+    }
+    .nav-bar{
+        position: absolute;
+        display: inline-block;
+        background-color: blue;
+        margin-left: 10%;
+        width:50%;
+        height:20%;
+    }
+    nav a{
+        color:white;
+        padding: 10px;
+        margin:10px;
+        font-size: 20px;
+    }
+    .grid-item1{
+        grid-area: header;
+
+    }
+    .grid-item2 img{
+        width:100%;
+        grid-area: hero;
+        position: absolute;
+        margin-top: 50px;
+
+    }
+    .grid-item3{
+        grid-area: products;
+
+    }
+    .grid-item4{
+        grid-area: enquiry;
+
+    }
+    .grid-item5{
+        grid-area: footer;
+
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: 'header header header header header'
+                              '. hero hero hero . hero'
+                              'products products products products products'
+                              'enquiry enquiry enquiry enquiry enquiry'
+                              'footer . footer . footer . footer';
+         grid-gap:1% 1% ;   
+         grid-template-columns: 30% 30% 30% 30% 30%; 
+         grid-template-rows: 20% 30% 50% 30% 20%; 
+         height:1300px;
+         width:100%;                
+    }
+    .product-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .product-item{
+        border-radius: 10%;
+        /* background:url(./t-shirt-1278404__340.jpg); */
+        width:19%;
+        height: 10%;
+        z-index: 2;
+         margin-top: 19%; 
+    }
+    .name{
+        
+        width:33%;
+        color:yellow;
+        background-color: rgba(0, 0, 0, 0.598);
+        border: 1px solid grey;
+        border-radius: 5px;
+
+    }
+    .p1 {
+        margin-top:40%;
+        
+        width:50%;
+        color:yellow;
+        background-color: rgba(0, 0, 0, 0.598);
+        border: 1px solid grey;
+        border-radius: 5px;
+        
+    }
+    #item1{
+        background:url(./t-shirt-1278404__340.jpg);
+    }
+    #item2{
+        background:url(./t-shirt-1278404__340.jpg);
+    }
+    #item3{
+        background:url(./t-shirt-1278404__340.jpg);
+    }
+    #item4{
+        background:url(./t-shirt-1278404__340.jpg);
+    }
+    #item5 {
+        background:url(./t-shirt-1278404__340.jpg);
+    }
+#flex{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
